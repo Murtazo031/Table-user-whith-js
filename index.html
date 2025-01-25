@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="body">
+    <div class="top">
+      <h2>User List</h2>
+      <div class="btn">
+        <button class="btnAdd">+ NEW</button>
+        <div class="mode">
+          <button class="light_mode">
+            <img src="/images/light_mode.png" alt="" /> LIGHT
+          </button>
+          <button class="dark_mode">
+            DARK <img src="./images/dark_mode.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="filters">
+      <div class="filter">
+        <fieldset>
+          <legend>Status:</legend>
+          <select id="status">
+            <option value="All">All status</option>
+            <option value="true">Status True</option>
+            <option value="false">Status False</option>
+          </select>
+        </fieldset>
+       <fieldset>
+        <legend>City:</legend>
+        <select id="city">
+            <option value="All City">All City</option>
+            <option value="Dushanbe">Dushanbe</option>
+            <option value="Kulob">Kulob</option>
+            <option value="Hisor">Hisor</option>
+            <option value="Bokhtar">Bokhtar</option>
+            <option value="Khujand">Khujand</option>
+        </select>
+    </fieldset>
+      </div>
+     <fieldset>
+        <legend>Search</legend>
+        <form class="search">
+          <input placeholder="name ..." name="search" />
+          <button type="submit">
+            <img src="./images/SearchFilled.png" alt="" />
+          </button>
+        </form>
+     </fieldset>
+    </div>
+
+    <dialog class="modalEdit">
+      <div class="btns">
+        <button class="closeBtn">X</button>
+        <button class="btnView">
+          <img src="./images/Icon.png" alt="" /> View profile
+        </button>
+        <button class="btnEdit">
+          <img src="./images/EditFilled.png" alt="" />Edit
+        </button>
+        <button style="color: #ef4444" class="btnDelete">
+          <img src="./images/Vector.png" alt="" />Delete
+        </button>
+      </div>
+    </dialog>
+
+    <dialog class="modalInfo">
+      <div class="div">
+        <button class="closeInfo">X</button>
+        <h3>User info</h3>
+      </div>
+      <div class="user">
+        <img class="avatarInfo" src="" alt="" />
+        <h3 class="nameInfo"></h3>
+        <p class="emailInfo"></p>
+      </div>
+      <div class="details">
+        <div class="city">
+          <div>
+            <img src="./images/Lock.png" alt="" />
+            <p>City</p>
+          </div>
+          <span class="cityInfo"></span>
+        </div>
+        <div class="status">
+          <div>
+            <img src="./images/Timer.png" alt="" />
+            <p>status</p>
+          </div>
+          <span class="statusInfo"></span>
+        </div>
+        <div class="Phone">
+          <div>
+            <img src="./images/tag.png" alt="" />
+            <p>Phone</p>
+          </div>
+          <span class="phoneInfo"></span>
+        </div>
+      </div>
+      <div class="button">
+        <button class="btnEditI"><img src="./images/Icon Left.png" alt=""> EDIT</button>
+        <button class="btnDeleteI"><img src="./images/Vector.png" alt=""> DELETE</button>
+      </div>
+    </dialog>
+
+    <dialog class="modalChange">
+        <div>
+            <h2 class="headerEdit"></h2>
+        </div>
+      <form class="formEdit">
+        <input name="avatar" placeholder="url" />
+        <input name="name" placeholder="name" />
+        <input name="email" placeholder="email" />
+        <input name="city" placeholder="city" />
+        <input name="status" placeholder="status" />
+        <input name="phone" placeholder="phone" />
+        <button type="submit">Save</button>
+        <button type="button" class="cancel">Cancel</button>
+      </form>
+    </dialog>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th><img src="./images/user-icon.png" alt="" />Name</th>
+          <th><img src="./images/Lock.png" alt="" /> City</th>
+          <th>
+            <img src="./images/Timer.png" alt="" />status
+            <img src="./images/arrow-alt-up.png" alt="" />
+          </th>
+          <th><img src="./images/tag.png" alt="" />phone</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="parent"></tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
