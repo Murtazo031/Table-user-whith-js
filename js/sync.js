@@ -24,19 +24,22 @@ let closeInfo = document.querySelector(".closeInfo");
 let btnDeleteI = document.querySelector(".btnDeleteI");
 let btnEditI = document.querySelector(".btnEditI");
 let modalChange = document.querySelector(".modalChange");
+let headerEdit = document.querySelector(".headerEdit")
 let formEdit = document.querySelector(".formEdit");
+let btnCancel = document.querySelector(".btnCancel");
 let status = document.querySelector("#status");
 let city = document.querySelector("#city");
 let formSearch = document.querySelector(".search");
 let btnAdd = document.querySelector(".btnAdd");
 let lightMode = document.querySelector(".light_mode");
 let darkMode = document.querySelector(".dark_mode");
-let headerEdit = document.querySelector(".headerEdit")
 
+// for Modes
 let body = document.querySelector(".body");
 let top = document.querySelector(".top");
 let filters = document.querySelector(".filters");
 let table = document.querySelector(".table");
+let th = document.querySelectorAll("#th")
 
 
 
@@ -54,7 +57,9 @@ lightMode.onclick = ()=>{
      modalChange.style.backgroundColor = "white";
      modalChange.style.color = "black";
      table.style.backgroundColor = "white";
-     table.style.color = "black";   
+     table.style.color = "black"; 
+     th.style.backgroundColor = "#dbdde8";
+     th.style.color = "black";  
 }
 
 darkMode.onclick = ()=>{
@@ -71,9 +76,11 @@ darkMode.onclick = ()=>{
      modalChange.style.backgroundColor = "darkgray";
      modalChange.style.color = "white";
      table.style.backgroundColor = "darkgrey";
-     table.style.color = "white";   
-}
+     table.style.color = "white"; 
+     th.style.backgroundColor = "darkgrey";
+     th.style.color = "white";
 
+}
 
 btnAdd.onclick = () => {
     modalChange.showModal();
@@ -145,6 +152,7 @@ function openButtons(e) {
   };
   btnEdit.onclick = ()=>{
     openModalEdit(e);
+    modalEdit.close();
   };
 }
 
@@ -168,6 +176,11 @@ function openModalEdit(e) {
     updateData(e, avatar, name, email, city, status, phone);
     modalChange.close();
   };
+}
+
+btnCancel.onclick = () => {
+  modalEdit.close();
+  modalChange.close();
 }
 
 function getData(data) {

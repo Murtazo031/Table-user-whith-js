@@ -31,19 +31,19 @@
             <option value="false">Status False</option>
           </select>
         </fieldset>
-       <fieldset>
-        <legend>City:</legend>
-        <select id="city">
+        <fieldset>
+          <legend>City:</legend>
+          <select id="city">
             <option value="All City">All City</option>
             <option value="Dushanbe">Dushanbe</option>
             <option value="Kulob">Kulob</option>
             <option value="Hisor">Hisor</option>
             <option value="Bokhtar">Bokhtar</option>
             <option value="Khujand">Khujand</option>
-        </select>
-    </fieldset>
+          </select>
+        </fieldset>
       </div>
-     <fieldset>
+      <fieldset>
         <legend>Search</legend>
         <form class="search">
           <input placeholder="name ..." name="search" />
@@ -51,7 +51,7 @@
             <img src="./images/SearchFilled.png" alt="" />
           </button>
         </form>
-     </fieldset>
+      </fieldset>
     </div>
 
     <dialog class="modalEdit">
@@ -103,15 +103,19 @@
         </div>
       </div>
       <div class="button">
-        <button class="btnEditI"><img src="./images/Icon Left.png" alt=""> EDIT</button>
-        <button class="btnDeleteI"><img src="./images/Vector.png" alt=""> DELETE</button>
+        <button class="btnEditI">
+          <img src="./images/Icon Left.png" alt="" /> EDIT
+        </button>
+        <button class="btnDeleteI">
+          <img src="./images/Vector.png" alt="" /> DELETE
+        </button>
       </div>
     </dialog>
 
     <dialog class="modalChange">
-        <div>
-            <h2 class="headerEdit"></h2>
-        </div>
+      <div>
+        <h2 class="headerEdit"></h2>
+      </div>
       <form class="formEdit">
         <input name="avatar" placeholder="url" />
         <input name="name" placeholder="name" />
@@ -119,22 +123,24 @@
         <input name="city" placeholder="city" />
         <input name="status" placeholder="status" />
         <input name="phone" placeholder="phone" />
-        <button type="submit">Save</button>
-        <button type="button" class="cancel">Cancel</button>
+        <div class="infoBtn">
+          <button class="btnSave" type="submit">SAVE</button>
+          <button class="btnCancel" type="button" class="cancel">CANCEL</button>
+        </div>
       </form>
     </dialog>
 
     <table class="table">
       <thead>
         <tr>
-          <th><img src="./images/user-icon.png" alt="" />Name</th>
-          <th><img src="./images/Lock.png" alt="" /> City</th>
-          <th>
-            <img src="./images/Timer.png" alt="" />status
-            <img src="./images/arrow-alt-up.png" alt="" />
-          </th>
-          <th><img src="./images/tag.png" alt="" />phone</th>
-          <th></th>
+          <th id="th"><img src="./images/user-icon.png" alt="" />Name</th>
+          <th id="th"><img src="./images/Lock.png" alt="" /> City</th>
+          <th id="th">
+              <img src="./images/Timer.png" alt="" />status
+              <img src="./images/arrow-alt-up.png" alt="" />
+              </th>
+          <th id="th"><img src="./images/tag.png" alt="" />phone</th>
+          <th id="th"></th>
         </tr>
       </thead>
       <tbody class="parent"></tbody>

@@ -48,7 +48,6 @@
 :hover.dark_mode {
     background-color: lightgrey;
 }
-
 .filters{
     width: 95%;
     margin: auto;
@@ -64,10 +63,10 @@ table{
     margin: auto;
     text-align: start;
 }
-thead th {
+#th {
     padding: 1% 2%;
     text-align: start;
-    background-color: #F8F9FD;
+    background-color: #dbdde8;
     height: 35px;
     border-collapse: collapse;
     border-bottom: 1px solid rgb(210, 207, 207);
@@ -141,7 +140,6 @@ thead th {
   display: flex;
   gap: 12px;
 }
-
 .Phone div {
     display: flex;
     gap: 12px;
@@ -186,7 +184,7 @@ thead th {
     border: 1px solid #D32F2F;
 }
 .btnDeleteI img {
-    width: 18px;
+    width: 15px;
     height: 18px;
 }
 .avatarInfo{
@@ -262,7 +260,7 @@ fieldset {
     border: none;
     outline: none;
     width: 25%;
-    height: 60%;
+    height: 70%;
     border-radius: 5px;
     box-shadow: 0px 0px 5px grey;
 }
@@ -271,4 +269,43 @@ fieldset {
     flex-direction: column;
     align-items: center;
     gap: 25px;
+}
+.formEdit input {
+    outline: none;
+    border: 1px solid #b3afaf;
+    padding: 10px;
+    width: 90%;
+}
+.headerEdit {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.infoBtn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top:1px solid #d0cfcf;
+    padding-top: 25px;
+}
+.btnSave{
+    background-color: #2196F3;
+    box-shadow: 0px 2px 3px grey;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btnCancel{
+    background-color: white;
+    color: #2196F3;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    cursor: pointer;
 }
